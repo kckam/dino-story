@@ -366,7 +366,7 @@ export default function Home() {
 
             <section className="about-us" id="about-us">
                 <Title className="title">About Us</Title>
-                <p>We are dino story</p>
+                <p>We are dino story! Create your story with us.</p>
 
                 <Image
                     src="/logo/little-no.svg"
