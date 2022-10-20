@@ -19,6 +19,13 @@ const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
     i18n,
+    webpack: (config, { isServer }) => {
+        if (isServer) {
+            require("./scripts/generate-sitemap");
+        }
+
+        return config;
+    },
     images: {
         domains: ["dummyimage.com"],
         minimumCacheTTL: 60,
