@@ -303,126 +303,133 @@ export default function Home() {
     ];
 
     return (
-        <StyledIndex>
-            <section className="carousel">
-                <Slider {...settings}>
-                    {carousel.map((el, i) => (
-                        <div
-                            className="carousel__item-wrapper"
-                            key={`carousel-${i}`}
-                        >
-                            <div className="carousel__item">
-                                <div className="carousel-item-text">
-                                    <div className="carousel__item-tag">
-                                        {el.category}
-                                    </div>
-                                    <Title className="hero-title">
-                                        {el.title}
-                                    </Title>
-                                    <Link href="" passHref>
-                                        <Button>{t("common.explore")} </Button>
-                                    </Link>
-                                </div>
+        <>
+            <Head>
+                <title>Dino Story | {t("home")}</title>
+            </Head>
 
-                                <div className="carousel-item-image">
-                                    <Image
-                                        src="/assets/hero2.jpg"
-                                        fill
-                                        alt={el.title}
-                                    />
+            <StyledIndex>
+                <section className="carousel">
+                    <Slider {...settings}>
+                        {carousel.map((el, i) => (
+                            <div
+                                className="carousel__item-wrapper"
+                                key={`carousel-${i}`}
+                            >
+                                <div className="carousel__item">
+                                    <div className="carousel-item-text">
+                                        <div className="carousel__item-tag">
+                                            {el.category}
+                                        </div>
+                                        <Title className="hero-title">
+                                            {el.title}
+                                        </Title>
+                                        <Link href="" passHref>
+                                            <Button>
+                                                {t("common.explore")}{" "}
+                                            </Button>
+                                        </Link>
+                                    </div>
+
+                                    <div className="carousel-item-image">
+                                        <Image
+                                            src="/assets/hero2.jpg"
+                                            fill
+                                            alt={el.title}
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
-            </section>
+                        ))}
+                    </Slider>
+                </section>
 
-            <section className="events">
-                <ul className="event-headers">
-                    <li>{t("t1")}</li>
-                    <li className="dot"></li>
-                    <li>{t("t2")}</li>
-                    <li className="dot"></li>
-                    <li>{t("t3")}</li>
-                </ul>
+                <section className="events">
+                    <ul className="event-headers">
+                        <li>{t("t1")}</li>
+                        <li className="dot"></li>
+                        <li>{t("t2")}</li>
+                        <li className="dot"></li>
+                        <li>{t("t3")}</li>
+                    </ul>
 
-                <p>{t("desc")}</p>
+                    <p>{t("desc")}</p>
 
-                <ul className="grid">
-                    <li className="first">
-                        <Image src="/assets/hero2.jpg" fill alt="ok" />
-                    </li>
-                    <li className="second">
-                        <Image src="/assets/hero2.jpg" fill alt="ok" />
-                    </li>
-                    <li className="third">
-                        <Image src="/assets/hero2.jpg" fill alt="ok" />
-                    </li>
-                    <li className="fourth">
-                        <Image src="/assets/hero2.jpg" fill alt="ok" />
-                    </li>
-                </ul>
-            </section>
+                    <ul className="grid">
+                        <li className="first">
+                            <Image src="/assets/hero2.jpg" fill alt="ok" />
+                        </li>
+                        <li className="second">
+                            <Image src="/assets/hero2.jpg" fill alt="ok" />
+                        </li>
+                        <li className="third">
+                            <Image src="/assets/hero2.jpg" fill alt="ok" />
+                        </li>
+                        <li className="fourth">
+                            <Image src="/assets/hero2.jpg" fill alt="ok" />
+                        </li>
+                    </ul>
+                </section>
 
-            <section className="about-us" id="about-us">
-                <Title className="title">About Us</Title>
-                <p>We are dino story! Create your story with us.</p>
+                <section className="about-us" id="about-us">
+                    <Title className="title">About Us</Title>
+                    <p>We are dino story! Create your story with us.</p>
 
-                <Image
-                    src="/logo/little-no.svg"
-                    fill
-                    size={"100vw"}
-                    alt="ok"
-                    style={{
-                        opacity: 0.07,
-                        pointerEvents: "none",
-                        // transform:"scale(2)",
-                        top: "-4rem",
-                    }}
-                />
-                <br />
-                <br />
-                <br />
-                <br />
-                <Link href="" passHref>
-                    <Button>Explore</Button>
-                </Link>
-            </section>
-
-            <section className="contact-us" id="contact-us">
-                <Title className="title">Contact Us</Title>
-                <p>Please do not hesitate to contact us.</p>
-
-                <div className="image-wrapper">
                     <Image
-                        src="/assets/hero3.jpg"
+                        src="/logo/little-no.svg"
                         fill
-                        // width="0"
-                        // height="0"
-                        sizes={"100vw"}
+                        size={"100vw"}
                         alt="ok"
                         style={{
-                            opacity: 0.3,
-                            zIndex: -1,
-                            objectFit: "cover",
-                            // width: "100%",
-                            // height: "auto",
+                            opacity: 0.07,
+                            pointerEvents: "none",
                             // transform:"scale(2)",
                             top: "-4rem",
                         }}
                     />
-                </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <Link href="" passHref>
+                        <Button>Explore</Button>
+                    </Link>
+                </section>
 
-                <br />
-                <br />
-                <br />
-                <br />
-                <Link href="" passHref>
-                    <Button>Explore</Button>
-                </Link>
-            </section>
+                <section className="contact-us" id="contact-us">
+                    <Title className="title">Contact Us</Title>
+                    <p>Please do not hesitate to contact us.</p>
 
-            {/* <section className="contact-us">
+                    <div className="image-wrapper">
+                        <Image
+                            src="/assets/hero3.jpg"
+                            fill
+                            // width="0"
+                            // height="0"
+                            sizes={"100vw"}
+                            alt="ok"
+                            style={{
+                                opacity: 0.3,
+                                zIndex: -1,
+                                objectFit: "cover",
+                                // width: "100%",
+                                // height: "auto",
+                                // transform:"scale(2)",
+                                top: "-4rem",
+                            }}
+                        />
+                    </div>
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <Link href="" passHref>
+                        <Button>Explore</Button>
+                    </Link>
+                </section>
+
+                {/* <section className="contact-us">
                 <Title className="title">Contact Us</Title>
                 <p>
                     In the past few years, the cleanest website designs have
@@ -463,7 +470,8 @@ export default function Home() {
                     <Button>Explore</Button>
                 </Link>
             </section> */}
-        </StyledIndex>
+            </StyledIndex>
+        </>
     );
 }
 

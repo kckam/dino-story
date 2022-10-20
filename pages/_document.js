@@ -11,6 +11,17 @@ class MyDocument extends Document {
         return (
             <Html lang={currentLocale}>
                 <Head>
+                    <link rel="canonical" href="https://www.dinostory.my/" />
+                    <link
+                        rel="alternate"
+                        href="https://www.dinostory.my/"
+                        hreflang="en-SG"
+                    />
+                    <link
+                        rel="alternate"
+                        href="https://www.dinostory.my/"
+                        hreflang="zh-CN"
+                    />
                     <Script
                         id="gtm-script"
                         strategy="afterInteractive"
