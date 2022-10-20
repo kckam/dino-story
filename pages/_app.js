@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
             <GlobalStyle />
             <Header theme={theme} setTheme={setTheme} />
             <Component {...pageProps} />
-            {/* <Footer /> */}
+            <Footer />
         </ThemeProvider>
     );
 }

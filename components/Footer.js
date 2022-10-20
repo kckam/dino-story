@@ -76,28 +76,48 @@ function Footer() {
                 <li>
                     <h3>Address</h3>
                     <div>
-                        23, jalan biru muda,
-                        <br /> taman pelangi, 80400,
-                        <br /> jb, johor
+                        59A, Jalan Sutera Tanjung 8/3,
+                        <br />
+                        Taman Sutera Utama,
+                        <br />
+                        81300 Skudai,
+                        <br />
+                        Johor,
+                        <br />
+                        Malaysia
                     </div>
                 </li>
 
                 <li>
-                    <h3>Operating hour</h3>
-                    <div>8pm-8pm</div>
+                    <h3>Business hours</h3>
+                    <div>
+                        Mon: 11:00 AM – 6:00 PM
+                        <br />
+                        Tue: 11:00 AM – 6:00 PM
+                        <br />
+                        Wed: 11:00 AM – 6:00 PM
+                        <br />
+                        Thu: 11:00 AM – 6:00 PM
+                        <br />
+                        Fri: 11:00 AM – 6:00 PM
+                        <br />
+                        Sat: 11:00 AM – 6:00 PM
+                        <br />
+                        Sun: 11:00 AM – 6:00 PM
+                    </div>
                 </li>
 
                 <li>
-                    <h3>Sitemap</h3>
+                    {/* <h3>Sitemap</h3>
                     <ul>
                         <li>Contact us</li>
                         <li>Contact us</li>
                         <li>Contact us</li>
-                    </ul>
+                    </ul> */}
                 </li>
 
                 <li>
-                    <h3>Social media</h3>
+                    {/* <h3>Social media</h3>
                     <ul className="social-medias">
                         <li>
                             <i className="fa-brands fa-square-facebook"></i>
@@ -105,7 +125,7 @@ function Footer() {
                         <li>
                             <i className="fa-brands fa-square-instagram"></i>
                         </li>
-                    </ul>
+                    </ul> */}
                 </li>
             </ul>
         </StyledFooter>
